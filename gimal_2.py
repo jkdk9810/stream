@@ -31,12 +31,22 @@ body = json_ob['response']['body']['items']
 
 # # Dataframe으로 만들기
 dataframe = pd.DataFrame(body)
+
 # # key 값 int으로 만들기
-dataframe['O3_value'] = pd.to_numeric(dataframe['o3Value'])
-dataframe['Dust_value'] = pd.to_numeric(dataframe['pm10Value'])
+for i in range(len(dataframe['o3Value'])):
+    if dataframe['o3Value'][i] == '-':
+        dataframe['o3Value'][i] = '0'
+        
+for i in range(len(dataframe['pm10Value'])):
+    if dataframe['pm10Value'][i] == '-':
+        dataframe['pm10Value'][i] = '0'
+
+
+dataframe['O3_Value'] = pd.to_numeric(dataframe['o3Value'])
+dataframe['Dust_Value'] = pd.to_numeric(dataframe['pm10Value'])
 time = dataframe['dataTime']
-total = dataframe['O3_value']
-dust = dataframe['Dust_value']
+total = dataframe['O3_Value']
+dust = dataframe['Dust_Value']
 
 # # 바차트 올리기
 st.write(total)
