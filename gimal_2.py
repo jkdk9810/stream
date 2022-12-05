@@ -5,8 +5,8 @@ import json
 import pandas as pd
 import streamlit as st
 import altair as alt
-file_path = "D:\simple.txt"
-url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=오정동&dataTerm=DAILY&pageNo=1&numOfRows=100&returnType=json&serviceKey=FJ1n8Qg%2BskwumolGLdjbe0XiIBDwGE6onuyuuJ7DE%2FKp3mbiQ%2BC%2BjY5vCqZDpME18GxK%2Bw8bq%2BBj904iugdaSg%3D%3D"
+file_path = "C:\\Users\hojin\Desktop\gwajea\python\gimal\simple.txt"
+url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=파주&dataTerm=DAILY&pageNo=1&numOfRows=100&returnType=json&serviceKey=FJ1n8Qg%2BskwumolGLdjbe0XiIBDwGE6onuyuuJ7DE%2FKp3mbiQ%2BC%2BjY5vCqZDpME18GxK%2Bw8bq%2BBj904iugdaSg%3D%3D"
 
 image2 = 'https://github.com/jkdk9810/stream/blob/main/mise.png?raw=true'
 image1 = 'https://github.com/jkdk9810/stream/blob/main/ozon.png?raw=true'
@@ -37,11 +37,9 @@ dataframe['Dust_value'] = pd.to_numeric(dataframe['pm10Value'])
 time = dataframe['dataTime']
 total = dataframe['O3_value']
 dust = dataframe['Dust_value']
-
 # # 바차트 올리기
 st.write(total)
-st.image(image1)
 st.bar_chart(total)
 st.image(image2)
 st.bar_chart(dust)
-
+st.image(image1)
