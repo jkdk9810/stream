@@ -37,9 +37,11 @@ dataframe['Dust_value'] = pd.to_numeric(dataframe['pm10Value'])
 time = dataframe['dataTime']
 total = dataframe['O3_value']
 dust = dataframe['Dust_value']
+
 # # 바차트 올리기
 st.write(total)
-st.bar_chart(total)
 st.image(image2)
-st.bar_chart(dust)
+st.bar_chart(total)
 st.image(image1)
+st.bar_chart(dust)
+
