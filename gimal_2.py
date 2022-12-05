@@ -49,9 +49,9 @@ total = dataframe['O3_Value']
 dust = dataframe['Dust_Value']
 
 # # 바차트 올리기
-st.write(total)
-st.image(image2)
-st.bar_chart(total)
+#st.write(total)
 st.image(image1)
+st.bar_chart(total)
+st.image(image2)
 st.bar_chart(dust)
 
