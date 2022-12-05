@@ -40,8 +40,8 @@ dust = dataframe['Dust_value']
 
 # # 바차트 올리기
 st.write(total)
-st.image(image2)
-st.bar_chart(total)
 st.image(image1)
+st.bar_chart(total)
+st.image(image2)
 st.bar_chart(dust)
 
