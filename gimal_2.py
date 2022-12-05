@@ -32,7 +32,7 @@ body = json_ob['response']['body']['items']
 # # Dataframe으로 만들기
 dataframe = pd.DataFrame(body)
 # # key 값 int으로 만들기
-dataframe['O3_value'] = pd.to_numeric(dataframe['O3Value'])
+dataframe['O3_value'] = pd.to_numeric(dataframe['o3Value'])
 dataframe['Dust_value'] = pd.to_numeric(dataframe['pm10Value'])
 time = dataframe['dataTime']
 total = dataframe['O3_value']
