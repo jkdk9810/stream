@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 file_path = "C:\\Users\hojin\Desktop\gwajea\python\gimal\simple.txt"
-url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=구로&dataTerm=DAILY&pageNo=1&numOfRows=100&returnType=json&serviceKey=FJ1n8Qg%2BskwumolGLdjbe0XiIBDwGE6onuyuuJ7DE%2FKp3mbiQ%2BC%2BjY5vCqZDpME18GxK%2Bw8bq%2BBj904iugdaSg%3D%3D"
+url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=파주&dataTerm=DAILY&pageNo=1&numOfRows=100&returnType=json&serviceKey=FJ1n8Qg%2BskwumolGLdjbe0XiIBDwGE6onuyuuJ7DE%2FKp3mbiQ%2BC%2BjY5vCqZDpME18GxK%2Bw8bq%2BBj904iugdaSg%3D%3D"
 
 image2 = 'https://github.com/jkdk9810/stream/blob/main/mise.png?raw=true'
 image1 = 'https://github.com/jkdk9810/stream/blob/main/ozon.png?raw=true'
